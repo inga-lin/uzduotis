@@ -1,0 +1,4 @@
+/node_modules
+package-local.json
+/.vscode
+.DS_Store
