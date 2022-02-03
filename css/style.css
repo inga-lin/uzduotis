@@ -11,15 +11,19 @@ body {
 }
 
 .conrainer {
+    display: flex;
     margin-top: 40px;
-    width: 1500px;
-    margin-left: calc(50% - 750px);
+    width: 100%;
+    /*width: 1500px;
+    /*margin-left: calc(50% - 750px);*/
 }
 
 .main {
-    width: 24%;
-    display: inline-block;
+    
+    width: 25%;
+    /*display: inline-block;*/
     padding: 20px 30px;
+    flex: 1;
 }
 
 img {
@@ -59,4 +63,106 @@ p {
 
 .foto4 {
     background-color: #919191;
+}
+
+@media (max-width: 1400px) {
+    .conrainer{
+        width: 1200px;
+        margin: 0 calc(50% - 600px);
+    }
+}
+
+@media (max-width: 1200px) {
+    .conrainer{
+        width: 1000px;
+        display: grid;
+        grid-template-columns: auto auto ;
+        margin: 0 calc(50% - 500px);
+    }
+
+    .main{
+        width: 100%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .conrainer{
+        width: 800px;
+        display: grid;
+        grid-template-columns: auto auto ;
+        margin: 0 calc(50% - 400px);
+    }
+
+    .main{
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .conrainer{
+        width: 650px;
+        display: grid;
+        grid-template-columns: auto auto ;
+        margin: 0 calc(50% - 325px);
+    }
+
+    .main{
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+    .conrainer {
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+        margin: 0 calc(50% - 300px) ;
+    }
+    .main {
+        width: 100%;
+        margin: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .conrainer {
+        display: flex;
+        flex-direction: column;
+        width: 480px;
+        margin: 0 calc(50% - 240px) ;
+    }
+    .main {
+        width: 100%;
+        margin: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media (max-width: 500px) {
+    .conrainer {
+        flex-direction: column;
+        width: 350px;
+        margin: 0 calc(50% - 175px) ;
+    }
+    .main {
+        width: 100%;
+        margin: 0;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    .conrainer {
+        flex-direction: column;
+        width: 300px;
+        margin: 0 calc(50% - 150px) ;
+    }
+    .main {
+        width: 100%;
+        margin: 0;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
